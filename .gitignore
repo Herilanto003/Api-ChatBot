@@ -1,0 +1,77 @@
+# ---------- Secrets / environnement ----------
+.env
+.env.*
+!.env.example
+*.env
+secrets.json
+*.pem
+*.key
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# ---------- Environnements virtuels ----------
+.venv/
+venv/
+ENV/
+env/
+.python-version
+
+# ---------- Tests / couverture ----------
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# ---------- Typage / linting / formatage ----------
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+.pyright/
+.bandit/
+*.log
+
+# ---------- Base de données locale ----------
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+pgdata/
+backup/
+*.dump
+*.sql.gz
+
+# ---------- Alembic (garder les migrations, ignorer les artefacts) ----------
+alembic/versions/__pycache__/
+
+# ---------- Éditeurs / OS ----------
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Divers ----------
+.cache/
+.tmp/
+tmp/
+*.bak
+*.orig
